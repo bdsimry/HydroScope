@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Stress Ratio Choropleth Map</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <!-- Logo linked to the homepage -->
+            <li class="nav-item logo">
+                <a href="index.html"><img src="logo.png" alt="Logo" class="navbar-logo"></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="javascript:void(0)">Explore</a>
+                <ul class="dropdown-list">
+                    <li><a href="EuropeOverview.html">Europe-Wide Water Overview</a></li>
+                    <li><a href="choropleth.html">Water Stress Map</a></li>
+                    <li><a href="combined_barcharts.html">Country-Level Water Overview</a></li>                    
+                </ul>
+            </li>
+            <li class="nav-item"><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div id="main-container">
+    <!-- Title and Description Section -->
+    <div id="title-description-container">
+        <h1>Water Stress: Consumption vs. Water Abstractions</h1>
+        <p>
+            The <strong>water stress ratio</strong> compares a country's water demand to its available water abstractions. A high ratio signals potential water scarcity, stressing ecosystems and communities. It’s a key indicator of environmental and socio-economic risks.
+        </p>
+        <p>
+            To interact with the visualization, select a water use category from the dropdown, adjust the year with the slider, hover over countries to see their name and water stress ratio, and click on a country to view its water usage in each category within the selected year. You can also zoom in or out of the map using two fingers for a more detailed or broader view of the data.
+        </p>                                         
+    </div>
+    
+
+    <div class="main-sub-container">
+        <div class="first-container">
+            <!-- Controls Section -->
+            <div id="controls-container">
+                <label for="measure-group">Select Category of Use:</label>
+                <select id="measure-group"></select>
+                <br><br>
+            </div>
+
+            <!-- Slider Container -->
+            <div class="slider-wrapper">
+                <div id="slider-container">
+                    <label for="year-slider">Select Year:</label>
+                    <input type="range" id="year-slider" min="1990" max="2022" step="1" value="2023">
+                    <span id="year-value">2022</span>
+                </div>
+            </div>
+
+            <!-- Donut Chart Container -->
+            <div id="donut-chart-container">
+                <div id="donut-chart"></div> <!-- Pie chart here -->
+                <div id="legend-container"></div> <!-- Legend here -->
+            </div>
+        </div>
+        <div class="second-container">
+            <!-- Choropleth Map Container -->
+            <div id="choropleth-container">
+                <div id="horizontal-legend"></div> <!-- Legend here -->
+                <!-- SVG container for choropleth map -->
+                <div class="map-wrapper">
+                    <svg class="choropleth-map" viewBox="0 0 2000 750" preserveAspectRatio="xMidYMid meet"></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="choropleth.js"></script>
+</div>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; COS30045 Data Visualisation Lab 1 Group 9</p>
+        <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

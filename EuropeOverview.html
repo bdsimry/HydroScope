@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Europe Region-Wide Overview</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <!-- Logo linked to the homepage -->
+            <li class="nav-item logo">
+                <a href="index.html"><img src="logo.png" alt="Logo" class="navbar-logo"></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="javascript:void(0)">Explore</a>
+                <ul class="dropdown-list">
+                    <li><a href="EuropeOverview.html">Europe-Wide Water Overview</a></li>
+                    <li><a href="choropleth.html">Water Stress Map</a></li>
+                    <li><a href="combined_barcharts.html">Country-Level Water Overview</a></li>                    
+                </ul>
+            </li>
+            <li class="nav-item"><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div id="title-description-container">
+        <h1>Europe Region-Wide Overview of Water Resources, Usage & Abstractions</h1>
+        <p> The charts provide a detailed overview of <strong>water usage</strong>, <strong>resources</strong>, and <strong>abstractions</strong> Europe-wide from <strong>1990</strong> to <strong>2022</strong>. You can interact with the charts by clicking the different buttons to toggle between various charts—focusing on water usage, resources, or abstraction. Hover over any data point on the chart to view the exact values for each year. Additionally, in the water usage and abstraction charts, you can toggle individual legend items to hide specific categories, and toggle them again to bring them back into view for comparison. </p>
+    </div>      
+
+  <div id="visualizations-section" class="section">
+      <h2>Explore Trends of Water Usage, Resources & Abstractions in Europe</h2>
+      <div id="buttons-container">
+          <button class="visualization-btn" onclick="showChart('waterUsageChart')">Water Usage</button>
+          <button class="visualization-btn" onclick="showChart('waterResourcesChart')">Water Resources</button>
+          <button class="visualization-btn" onclick="showChart('waterAbstractionChart')">Water Abstractions</button>
+      </div>
+      <div id="charts-container">
+          <div id="waterUsageChart" class="chart">
+              <svg id="usage-svg" width="1400" height="480"></svg>
+          </div>
+          <div id="waterResourcesChart" class="chart" style="display: none;">
+              <svg id="resources-svg" width="1400" height="480"></svg>
+          </div>
+          <div id="waterAbstractionChart" class="chart" style="display: none;">
+              <svg id="abstraction-svg" width="1400" height="480"></svg>
+          </div>
+      </div>
+  </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; COS30045 Data Visualisation Lab 1 Group 9</p>
+        <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </footer>
+
+  <script src="europe_overview.js"></script>
+</body>
+</html>

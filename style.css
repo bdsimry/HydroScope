@@ -1,0 +1,1009 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Title Section with full background image */
+.title-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('title_bg1.jpeg');
+    background-size: cover;
+    background-position: center; /* Moves the background down 30% */
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.title-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.title-content {
+    position: relative;
+    z-index: 2;
+}
+
+.title-section h1 {
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Counter Styling - Keeps its original animation */
+.count {
+    display: inline-block;
+    width: 2ch;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+    color: #fff;
+    font-size: 1.7rem; /* Adjust size */
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+/* Subtitle fade-in animation with a delay */
+.subtitle {
+    opacity: 0; /* Initially hidden */
+    animation: fadeInSubtitle 1.5s ease 2s forwards; /* 1.5s fade-in, start after 2s */
+}
+
+@keyframes fadeInSubtitle {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Intro section layout */
+.intro-section {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center vertically */
+    padding: 60px 20px;
+    min-height: 100vh;
+    background-color: #fff;
+    color: #000;
+}
+
+.intro-section .content {
+    display: flex;
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Adjust max-width as needed */
+    align-items: flex-start; /* Align items at the start */
+    gap: 20px; /* Space between h2 and p elements */
+}
+
+/* Left aligned heading */
+.intro-section .intro-title {
+    flex: 1;
+    max-width: 30%; /* Adjust width as needed */
+    text-align: left;
+}
+
+.intro-section .intro-title h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-top: 100px;
+}
+
+/* Right aligned text content */
+.intro-section .intro-text {
+    flex: 2;
+    max-width: 70%; /* Adjust width as needed */
+    text-align: left;
+}
+
+.intro-section .intro-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem; /* Adds space between paragraphs */
+}
+
+/* Objectives section layout */
+.objectives-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 60px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.objectives-section .content {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Left aligned list content */
+.objectives-section .objectives-text {
+    flex: 2;
+    max-width: 70%;
+    text-align: left;
+    margin-left: 50px;
+
+}
+
+.objectives-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.objectives-section ul li {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+/* Right aligned heading */
+.objectives-section .objectives-title {
+    flex: 1;
+    max-width: 30%;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.objectives-section .objectives-title h2 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    margin-top: 100px;
+}
+
+/* Container that wraps all sections and takes full page height */
+.container {
+    position: relative;
+    min-height: 100vh;
+    overflow: visible; /* Change to visible to see if overflow is an issue */
+}
+
+/* Button Section - Positioned at the Bottom Right of the Page */
+.button-section {
+    position: absolute; /* Places it relative to the container */
+    bottom: 150px;
+    right: 30px;
+}
+
+/* Main Button Styling */
+.bounceBtn {
+    position: relative;
+    text-decoration: none;
+    padding: 0 17px;
+    height: 50px;
+    border-radius: 100px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff; /* White text */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #fff; /* White border */
+    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    animation: jump 1s ease infinite; /* Add jumping animation */
+}
+
+.bounceBtn {
+    animation: bounce 2s infinite; /* Apply the bounce animation */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure it takes the height of the button section */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Original position */
+    }
+    40% {
+        transform: translateY(-10px); /* First jump up */
+    }
+    60% {
+        transform: translateY(-5px); /* Bounce back down */
+    }
+}
+
+/* Background and text color change on hover */
+.bounceBtn:hover {
+    background-color: #fff; /* White background on hover */
+    color: #000; /* Black text on hover */
+}
+
+/* Styling for the + symbol */
+.bounceBtn span {
+    font-size: 30px;
+    color: #fff; /* White color for the + symbol */
+    transition: color 0.4s ease;
+}
+
+/* Change color of + symbol on hover */
+.bounceBtn:hover span {
+    color: #000; /* Black color on hover */
+}
+
+/* Expanding Label */
+.bounceBtn label {
+    width: 0;
+    opacity: 0;
+    white-space: nowrap;
+    color: #fff; /* White color initially */
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-left: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    pointer-events: none;
+}
+
+/* Label expansion on hover */
+.bounceBtn:hover label {
+    width: auto;
+    opacity: 1;
+    margin-left: 10px;
+    color: #000; /* Black color on hover */
+}
+
+/* Initially hidden content */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Apply fade-in effect when elements are in view */
+.animate-normal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #fff;
+    padding: 5px 20px; /* Reduced the top and bottom padding to make the navbar shorter */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 50px; /* Optional: you can also define a fixed height */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+}
+
+/* Navbar list styling */
+.navbar .nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    align-items: flex-start; /* Align items at the top of the navbar */
+}
+
+/* Logo styling */
+.navbar-logo {
+    height: 25px; /* Adjust logo size */
+    width: auto;
+    display: block;
+}
+
+/* Adjusting the spacing between the items */
+.navbar .nav-item {
+    margin-right: 20px; /* Space between items */
+}
+
+/* Styling for the list item links */
+.navbar .nav-item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-item a:hover{
+    color: #aaa;
+}
+
+/* Adjust the logo item to push the other items beside it */
+.navbar .nav-item.logo {
+    margin-right: auto; /* Pushes the logo to the left side */
+}
+
+/* Dropdown styling */
+.navbar .dropdown {
+    position: relative;
+    z-index: 1050; /* Higher z-index for the dropdown button */
+}
+.navbar .dropdown:hover .dropdown-list {
+    display: block;
+}
+/* Hidden dropdown list */
+.navbar .dropdown-list {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    padding: 0;
+    width: 150px;
+    margin-top: 2px;
+    z-index: 1; /* Lower z-index to place it behind the dropdown button */
+}
+/* Styling for dropdown list items */
+.navbar .dropdown-list li a {
+    color: #333;
+    font-size: 14px;
+    display: block;
+    padding: 8px 12px;
+}
+.navbar .dropdown-list li a:hover {
+    background-color: #f0f0f0;
+    color: #aaa;
+}
+
+/* Footer styling */
+.footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    z-index: 5; /* Footer has a lower z-index */
+}
+
+.footer p {
+    margin: 0 0 10px;
+}
+
+.footer-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-nav li {
+    display: inline;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 0px 20px;
+}
+
+.footer-nav a:hover {
+    color: #aaa;
+}
+
+/*Choropleth*/
+/* Controls Section */
+#controls-container {
+    position: absolute;  /* Absolute positioning for larger screens */
+    margin-top: 5px;  /* Adjust top space for positioning */
+    left: 40px;
+    width: 35%;
+    z-index: 20;  /* Ensure it stays on top of the map */
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: background for better visibility */
+    padding: 10px 15px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+}
+
+/* Style for the dropdown (select) inside controls container */
+#controls-container select {
+    font-size: 14px; /* Set the font size */
+    padding: 5px 12px; /* Add padding to make the dropdown more clickable */
+    width: 100%; /* Make the dropdown take full width of its container */
+    border: 2px solid #ccc; /* Border with a light gray color */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text color for better readability */
+    cursor: pointer; /* Change cursor to pointer to indicate interactivity */
+    box-sizing: border-box; /* Make sure padding does not affect the width */
+    transition: border-color 0.3s ease; /* Smooth transition effect for focus state */
+}
+
+#controls-container select:hover {
+    background-color: #e0e0e0; /* Hover effect for the select box */
+    border-color: #999;
+}
+
+#controls-container select option {
+    font-size: 14px; /* Ensure consistent font size */
+    padding: 8px; /* Spacing for better readability */
+    background-color: #fff; /* Default background color */
+    color: #333; /* Default text color */
+}
+
+/* Hover effect for the options */
+#controls-container select option:hover {
+    background-color: #f0f0f0; /* Background color when hovered */
+    color: #000; /* Text color when hovered */
+}
+
+/* Style the label to be consistent with the input elements */
+#controls-container label {
+    font-size: 16px; /* Same font size as the dropdown */
+    font-weight: bold;
+    color: #333; /* Dark color for better readability */
+    display: block; /* Make the label a block-level element to ensure it spans full width */
+    margin: 5px 0px; /* Space between label and input */
+}
+
+/* Choropleth Map Container */
+#choropleth-container {
+    width: 100%;
+}
+
+/* Tooltip styling */
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 8px;
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.2s;
+    font-size: 14px; /* Optional: Adjust font size */
+    z-index: 15;
+}
+
+
+/* Slider Container */
+#slider-container label{
+    font-size: 16px; /* Same font size as the dropdown */
+    font-weight: bold;
+}
+
+/* Styling for the range slider */
+/* Slider Container */
+#slider-container {
+    position: absolute;
+    left: 40px;       /* Distance from the left edge */
+    margin-top: 110px;       /* Adjust the position */
+    background-color: rgba(255, 255, 255, 0.7); /* Light background for contrast */
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* Shadow effect */
+    z-index: 15;      /* Ensure it stays above the map */
+}
+
+#stacked_slider-container {
+    margin: 0 auto; /* Center the box */
+    background-color: rgba(255, 255, 255, 0.7); /* Light background for contrast */
+    padding: 5px; /* Reduced padding */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    text-align: center;
+    max-width: 250px; /* Set a maximum width */
+}
+
+#top5_slider-container {
+    margin: 0 auto; /* Center the box */
+    background-color: rgba(255, 255, 255, 0.7); /* Light background for contrast */
+    padding: 5px; /* Reduced padding */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    text-align: center;
+    max-width: 500px; /* Set a maximum width */
+    margin: 20px auto;
+}
+
+/* Label Styling */
+#slider-container label,
+#stacked_slider-container label, 
+#top5_slider-container label{
+    font-size: 14px; /* Font size */
+    font-weight: bold;
+    margin-bottom: 5px; /* Space between label and slider */
+}
+
+
+/* Styling for the range slider */
+#slider-container input[type="range"] {
+    appearance: none; /* Standard property for compatibility */
+    -webkit-appearance: none; /* Vendor prefix for Webkit browsers */
+    -moz-appearance: none; /* Vendor prefix for Mozilla browsers */
+    width: 280px; /* Adjust width of the slider */
+    height: 8px; /* Height of the slider */
+    background: #ddd; /* Base background color */
+    outline: none; /* Remove outline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s ease; /* Smooth transition */
+}
+
+#stacked_slider-container input[type="range"] {
+    appearance: none; /* Standard property for compatibility */
+    -webkit-appearance: none; /* Vendor prefix for Webkit browsers */
+    -moz-appearance: none; /* Vendor prefix for Mozilla browsers */
+    width: 100px; /* Adjust width of the slider */
+    height: 8px; /* Height of the slider */
+    background: #ddd; /* Base background color */
+    outline: none; /* Remove outline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s ease; /* Smooth transition */
+}
+
+#top5_slider-container input[type="range"]{
+    appearance: none; /* Standard property for compatibility */
+    -webkit-appearance: none; /* Vendor prefix for Webkit browsers */
+    -moz-appearance: none; /* Vendor prefix for Mozilla browsers */
+    width: 350px; /* Adjust width of the slider */
+    height: 8px; /* Height of the slider */
+    background: #ddd; /* Base background color */
+    outline: none; /* Remove outline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s ease; /* Smooth transition */
+}
+
+/* Thumb styling for the range slider */
+#slider-container input[type="range"]::-webkit-slider-thumb,
+#stacked_slider-container input[type="range"]::-webkit-slider-thumb,
+#top5_slider-container input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none; /* Remove default appearance */
+    width: 20px; /* Thumb width */
+    height: 20px; /* Thumb height */
+    background: #4f759e; /* Blue color for the thumb */
+    border-radius: 50%; /* Circular thumb */
+    cursor: pointer; /* Change cursor on hover */
+    border: 2px solid #fff; /* Optional border around the thumb */
+    transition: background 0.3s ease; /* Smooth transition */
+}
+
+#slider-container input[type="range"]::-moz-range-thumb {
+    width: 20px; /* Thumb width */
+    height: 20px; /* Thumb height */
+    background: #007bff; /* Blue color for the thumb */
+    border-radius: 50%; /* Circular thumb */
+    cursor: pointer; /* Change cursor on hover */
+    border: 2px solid #fff; /* Optional border around the thumb */
+    transition: background 0.3s ease; /* Smooth transition */
+}
+
+#slider-container input[type="range"]::-ms-thumb {
+    width: 20px; /* Thumb width */
+    height: 20px; /* Thumb height */
+    background: #007bff; /* Blue color for the thumb */
+    border-radius: 50%; /* Circular thumb */
+    cursor: pointer; /* Change cursor on hover */
+    border: 2px solid #fff; /* Optional border around the thumb */
+    transition: background 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for the thumb */
+#slider-container input[type="range"]::-webkit-slider-thumb:hover,
+#stacked_slider-container input[type="range"]::-webkit-slider-thumb:hover {
+    background: #0056b3; /* Darker blue when hovered */
+}
+
+#slider-container input[type="range"]::-moz-range-thumb:hover {
+    background: #0056b3; /* Darker blue when hovered */
+}
+
+#slider-container input[type="range"]::-ms-thumb:hover {
+    background: #0056b3; /* Darker blue when hovered */
+}
+
+/* Styling for the year value text */
+#year-value, #yearLabel, #ResourcesyearLabel, #AbsyearLabel, #top5Label{
+    margin-left: 10px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold; /* Optional: make the year value stand out */
+}
+
+
+#title-description-container {
+    margin: 10px 40px; /* Adjust margins as needed */
+    padding: 10px;
+}
+
+#title-description-container h1 {
+    font-size: 1.5rem; /* Adjust title font size as needed */
+    margin-bottom: 10px;
+}
+
+#title-description-container p {
+    font-size: 16px; /* Adjust paragraph font size */
+    color: #333; /* Text color */
+}
+
+/* Base styling for the legend container */
+#legend-container {
+    position: absolute;
+    left: 2vw;
+    z-index: 10; /* Ensure it stays above the map */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 1200px) {
+    #legend-container {
+        top: auto; /* Reset top position */
+        left: 5vw; /* Optionally adjust the horizontal positioning */
+        transform: translateY(80%); /* Add or tweak transform if necessary */
+    }
+}
+
+#donut-chart-container {
+    width: 440px;
+    height: 300px;
+    left: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 40px;
+    margin-top: 180px;
+    overflow: visible; /* Ensure content is not cut off */
+    display: none; /* Hide the container initially */
+}
+
+/* Base styling for the legend container inside donut chart */
+#legend-container {
+    position: absolute; /* Absolute positioning inside donut chart */
+    bottom: 50px; /* Position at the bottom of the container */
+    left: 25px; /* Slight offset to the left */
+    z-index: 15; /* Ensure it's visible on top */
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Space between legend items */
+    font-size: 14px; /* Adjust font size for readability */
+    color: #333; /* Color for the legend text */
+}
+
+/* Main container for content */
+#main-container {
+    flex: 1; /* Allows the content to expand while footer stays at the bottom */
+}
+
+#horizontal-legend {
+    margin-left: 20px !important;
+    display: flex;
+    flex-wrap: wrap; /* Wrap legend items if screen width is limited */
+    gap: 5px; 
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.slider-wrapper {
+    display: flex; /* Use flexbox */
+    flex-direction: row; /* Stack items vertically (rows) */
+    gap: 20px; /* Add some space between the two containers */
+    margin: 20px; /* Optional: Adds margin around the wrapper */
+}
+.main-sub-container {
+    display: flex; /* Enables Flexbox */
+    gap: 20px; /* Adds space between the two containers */
+    height: auto;
+}
+.first-container {
+    width: 40%; /* First container takes 40% */
+    max-width: 40%; /* Maximum width of 40% */
+}
+
+.second-container {
+    width: 55%; /* Second container takes 60% */
+    max-width: 60%; /* Maximum width of 60% */
+    height: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+    margin-bottom: 50px;
+    margin-right: 50px;
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Adds space between the content and the border */
+}
+/* Set a specific height for the .map-wrapper container */
+.map-wrapper {
+    width: 100% !important; /* Full width of its parent container */
+    height: 600px; /* Fixed height or a percentage of its parent */
+}
+.choropleth-map {
+    width: 100% !important; /* Makes the SVG fill the full width of its container */
+    height: 100%; /* Makes the SVG fill the full height of its container */
+    object-fit: contain; /* Preserve aspect ratio */
+}
+
+
+/* Optional: add some spacing adjustments for responsive design */
+@media screen and (max-width: 1200px) {
+    #donut-chart-container {
+        top: 92vw; /* Adjust top positioning to place above the map */
+        left: 5%;
+        transform: translateX(-10%); /* Center horizontally on the screen */
+        z-index: 20; /* Increase z-index if necessary to ensure it is above the map */
+        width: 450px; /* Reduce size for smaller screens */
+        height: 300px;
+    }
+    
+    #legend-container{
+        bottom: 180px; /* Position at the bottom of the container */
+    }
+
+    #horizontal-legend {
+        bottom: -770px;  /* Adjust this value to move it higher or lower above the footer */
+        left: 5%;      /* Keep the legend centered horizontally */
+        z-index: 10;    /* Ensure the legend stays on top */
+    }
+}
+
+/*Europe Overview Line Charts*/
+/* Buttons */
+#buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+#barchart_buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.visualization-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    background-color: #fff; /* Black background */
+    color: #1c1c1c; /* White text */
+    border-radius: 5px;
+    border: 2px solid #1c1c1c;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.visualization-btn:hover {
+    background-color: #1c1c1c; /* Blue background on hover */
+    color: #fff; /* Black text on hover */
+    border-color: #1c1c1c; /* Black border on hover */
+}
+
+  /* Centering the charts */
+  #charts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .chart {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Section for Visualizations */
+#visualizations-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    margin-bottom: 40px;
+  }
+
+  #barchart_visualizations-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+  
+
+  .stacked-visualization-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #fff; /* Black background */
+    color: #1c1c1c; /* White text */
+    border-radius: 5px;
+    border: 2px solid #1c1c1c;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#sortResourcesButton{
+    padding: 8px 30px;
+}
+
+.stacked-visualization-btn:hover {
+    background-color: #1c1c1c; /* Blue background on hover */
+    color: #fff; /* Black text on hover */
+    border-color: #1c1c1c; /* Black border on hover */
+}
+
+/* Active state styling */
+.stacked-visualization-btn.active {
+    background-color: #344966; /* Black background */
+    color: #fff; /* White text */
+    border-color: #1c1c1c; /* Black border */
+}
+
+#stacked_button-container {
+    margin: 0 auto; /* Center the box */
+    text-align: center;
+    max-width: 600px; /* Set a maximum width */
+    margin-bottom: 10px;
+}
+
+.barchart-section {
+    padding: 10px; /* Add padding to space out the content from the border */
+    margin-bottom: 30px; /* Add margin at the bottom for spacing */
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+}
+
+#barchart4-section{
+    margin-bottom: 50px;
+}
+
+.barchart_container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: auto;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.barchart_container_resources {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: auto;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.barchart_container_top5 {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    min-height: auto;
+    margin: auto;
+}
+.controls-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 20px;
+    margin-right: 50px;
+    flex: 2;
+    height: 100%;
+}
+.barchart {
+    flex-grow: 1;
+    width: 55%;
+    height: auto;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 14px
+}
+.legend-color-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    display: inline-block;
+}
+/* Responsive Design */
+@media (min-width: 768px) {
+    .barchart_container {
+        flex-direction: row;
+    }
+    .controls-panel {
+        width: 30%;
+        margin-bottom: 0;
+    }
+    .barchart {
+        flex-grow: 3;
+    }
+}
+
+#chartTitle, #UsechartTitle, #ResourcechartTitle, #AbstractchartTitle {
+    text-align: center;
+    color: #000;
+    font-size: 22px;   /* Increase the font size */
+    font-weight: bold; /* Make the text bold */
+    margin-top: 20px;
+}
+
+.aboutus_container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.aboutus_container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.team-member {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member-info {
+    max-width: 500px;
+}
+
+.member-info h2 {
+    margin: 0;
+    color: #2c3e50;
+}
+
+.member-info p {
+    color: #7f8c8d;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.member-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.assi_desc {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: justify;
+}

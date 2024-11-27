@@ -1,0 +1,191 @@
+Measure_group,Year,OBS_VALUE_use
+Agriculture,1970,15.8
+Agriculture,1975,80.7
+Agriculture,1980,53.08
+Agriculture,1985,58.5
+Agriculture,1989,89.0
+Agriculture,1990,182.8
+Agriculture,1991,163.7
+Agriculture,1992,169.4
+Agriculture,1993,153.1
+Agriculture,1994,106.3
+Agriculture,1995,243.6
+Agriculture,1996,256.5
+Agriculture,1997,587.2
+Agriculture,1998,7165.3
+Agriculture,1999,733.5
+Agriculture,2000,67.04502
+Agriculture,2001,121.12187
+Agriculture,2002,182.07952
+Agriculture,2003,186.13124
+Agriculture,2004,169.70446
+Agriculture,2005,172.87479
+Agriculture,2006,166.85633
+Agriculture,2007,125.90797
+Agriculture,2008,122.22066
+Agriculture,2009,121.98206000000002
+Agriculture,2010,163.4974
+Agriculture,2011,260.254062
+Agriculture,2012,241.229214
+Agriculture,2013,131.958554
+Agriculture,2014,138.366893
+Agriculture,2015,205.734374
+Agriculture,2016,172.319557
+Agriculture,2017,159.721969
+Agriculture,2018,163.16524900000002
+Agriculture,2019,172.247765
+Agriculture,2020,149.43874
+Agriculture,2021,129.599263
+Agriculture,2022,79.206963
+Domestic/Public Use,1970,12204.9
+Domestic/Public Use,1975,25637.3
+Domestic/Public Use,1980,22315.5
+Domestic/Public Use,1985,25284.4
+Domestic/Public Use,1989,14827.1
+Domestic/Public Use,1990,47153.29997558594
+Domestic/Public Use,1991,33677.2
+Domestic/Public Use,1992,24516.7
+Domestic/Public Use,1993,23611.8
+Domestic/Public Use,1994,25580.5
+Domestic/Public Use,1995,41332.89998779297
+Domestic/Public Use,1996,34410.30002441406
+Domestic/Public Use,1997,39198.69999389648
+Domestic/Public Use,1998,53139.09998779297
+Domestic/Public Use,1999,47505.99998779296
+Domestic/Public Use,2000,35449.6993
+Domestic/Public Use,2001,43405.5009
+Domestic/Public Use,2002,34317.6942
+Domestic/Public Use,2003,34674.82351
+Domestic/Public Use,2004,42363.16502
+Domestic/Public Use,2005,40847.370090000004
+Domestic/Public Use,2006,31174.252
+Domestic/Public Use,2007,31975.78804
+Domestic/Public Use,2008,31305.05518
+Domestic/Public Use,2009,25135.68162
+Domestic/Public Use,2010,33163.40403
+Domestic/Public Use,2011,36789.06017
+Domestic/Public Use,2012,36012.72481
+Domestic/Public Use,2013,30665.39715
+Domestic/Public Use,2014,26224.232210000002
+Domestic/Public Use,2015,37275.59993
+Domestic/Public Use,2016,32322.6326
+Domestic/Public Use,2017,28277.6987
+Domestic/Public Use,2018,33287.6842
+Domestic/Public Use,2019,32326.99338
+Domestic/Public Use,2020,29213.98076
+Domestic/Public Use,2021,18076.217940000002
+Domestic/Public Use,2022,11863.90077
+Energy Production,1970,6.4
+Energy Production,1975,5.9
+Energy Production,1980,2.0
+Energy Production,1985,2.0
+Energy Production,1989,0.0
+Energy Production,1990,5.5
+Energy Production,1991,30.6
+Energy Production,1992,28.200000000000003
+Energy Production,1993,54.5
+Energy Production,1994,36.2
+Energy Production,1995,77.2
+Energy Production,1996,31.3
+Energy Production,1997,69.7
+Energy Production,1998,242.0
+Energy Production,1999,197.4
+Energy Production,2000,19.851325
+Energy Production,2001,56.769836
+Energy Production,2002,20.478635
+Energy Production,2003,27.608618
+Energy Production,2004,65.191168
+Energy Production,2005,27.70912
+Energy Production,2006,26.123413
+Energy Production,2007,24.401605
+Energy Production,2008,19.706107
+Energy Production,2009,20.579407
+Energy Production,2010,95.594536
+Energy Production,2011,117.310679
+Energy Production,2012,93.130987
+Energy Production,2013,88.247829
+Energy Production,2014,85.228701
+Energy Production,2015,80.476804
+Energy Production,2016,68.4896947
+Energy Production,2017,70.64043699999999
+Energy Production,2018,71.94619900000001
+Energy Production,2019,69.899599
+Energy Production,2020,43.510609
+Energy Production,2021,18.7309771
+Energy Production,2022,15.55748
+Industry,1970,1624.1
+Industry,1975,2062.6
+Industry,1980,1821.0
+Industry,1985,1890.8
+Industry,1989,474.1
+Industry,1990,3831.0
+Industry,1991,3671.2999999999997
+Industry,1992,1583.3999999999999
+Industry,1993,1510.9
+Industry,1994,1471.1
+Industry,1995,3351.7999999999997
+Industry,1996,1657.5
+Industry,1997,1993.1
+Industry,1998,3768.2
+Industry,1999,3573.3
+Industry,2000,2303.3237832
+Industry,2001,3760.063545
+Industry,2002,2089.115306
+Industry,2003,2846.751887
+Industry,2004,3869.599941
+Industry,2005,3453.882351
+Industry,2006,3002.256886
+Industry,2007,3203.2965919999997
+Industry,2008,2605.139685
+Industry,2009,2508.769527
+Industry,2010,3857.503397
+Industry,2011,4673.812208
+Industry,2012,4242.8091
+Industry,2013,3971.3374750000003
+Industry,2014,3403.822774
+Industry,2015,4258.99418
+Industry,2016,3790.2949040000003
+Industry,2017,3520.950976
+Industry,2018,3530.366878
+Industry,2019,3888.9257939999998
+Industry,2020,3046.9905419
+Industry,2021,1785.299973
+Industry,2022,946.303583
+Services,1970,186.0
+Services,1975,783.3
+Services,1980,410.0
+Services,1985,541.8
+Services,1989,321.0
+Services,1990,1259.9
+Services,1991,1307.9
+Services,1992,446.0
+Services,1993,448.8
+Services,1994,954.6
+Services,1995,847.2
+Services,1996,1001.0
+Services,1997,1281.1
+Services,1998,1442.4
+Services,1999,2234.4
+Services,2000,1348.0335
+Services,2001,1282.4676100000001
+Services,2002,1299.4740299999999
+Services,2003,1487.7848199999999
+Services,2004,1498.13962
+Services,2005,1696.4600999999998
+Services,2006,1474.15362
+Services,2007,1513.4391999999998
+Services,2008,1362.4529
+Services,2009,1238.7383599999998
+Services,2010,1293.01299
+Services,2011,2018.80628
+Services,2012,1733.50712
+Services,2013,1665.35765
+Services,2014,1539.6651200000001
+Services,2015,2512.13776
+Services,2016,1632.32871
+Services,2017,1446.4274500000001
+Services,2018,1460.89991
+Services,2019,1551.46866
+Services,2020,1508.9630200000001
+Services,2021,712.36876
+Services,2022,533.81963

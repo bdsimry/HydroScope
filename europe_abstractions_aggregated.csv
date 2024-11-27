@@ -1,0 +1,133 @@
+Measure_group,Year,OBS_VALUE_abstraction
+Agriculture & Fisheries,1990,147408.46
+Agriculture & Fisheries,1991,169236.72999999998
+Agriculture & Fisheries,1992,67483.38
+Agriculture & Fisheries,1993,129520.1
+Agriculture & Fisheries,1994,49815.76
+Agriculture & Fisheries,1995,200942.51995117188
+Agriculture & Fisheries,1996,64160.42
+Agriculture & Fisheries,1997,148690.44006103513
+Agriculture & Fisheries,1998,158971.9999755859
+Agriculture & Fisheries,1999,142428.8900488281
+Agriculture & Fisheries,2000,187367.361287
+Agriculture & Fisheries,2001,181793.692722
+Agriculture & Fisheries,2002,175671.41331600002
+Agriculture & Fisheries,2003,180677.035715
+Agriculture & Fisheries,2004,177074.980993
+Agriculture & Fisheries,2005,210943.60511893997
+Agriculture & Fisheries,2006,207398.17441558588
+Agriculture & Fisheries,2007,209174.59052434884
+Agriculture & Fisheries,2008,169127.4475141118
+Agriculture & Fisheries,2009,173745.261066
+Agriculture & Fisheries,2010,170543.3586071118
+Agriculture & Fisheries,2011,205119.11004505176
+Agriculture & Fisheries,2012,203543.859372
+Agriculture & Fisheries,2013,190672.964595
+Agriculture & Fisheries,2014,191803.03033594825
+Agriculture & Fisheries,2015,205956.1563621172
+Agriculture & Fisheries,2016,204613.9127215586
+Agriculture & Fisheries,2017,204099.1882202207
+Agriculture & Fisheries,2018,199857.8320992344
+Agriculture & Fisheries,2019,201070.51559364842
+Agriculture & Fisheries,2020,183235.01250689646
+Agriculture & Fisheries,2021,95812.97005762476
+Agriculture & Fisheries,2022,45413.288257657005
+Domestic & Public Use,1990,63320.4998046875
+Domestic & Public Use,1991,74322.8599023438
+Domestic & Public Use,1992,53098.2599023438
+Domestic & Public Use,1993,62040.540195312504
+Domestic & Public Use,1994,55464.45
+Domestic & Public Use,1995,67418.2399023438
+Domestic & Public Use,1996,49051.45999389648
+Domestic & Public Use,1997,68925.23998779296
+Domestic & Public Use,1998,80836.8001953125
+Domestic & Public Use,1999,72704.36999389649
+Domestic & Public Use,2000,56135.392561
+Domestic & Public Use,2001,78072.0977073125
+Domestic & Public Use,2002,68939.162956
+Domestic & Public Use,2003,68777.8491796875
+Domestic & Public Use,2004,78473.7799133125
+Domestic & Public Use,2005,88624.5514643125
+Domestic & Public Use,2006,65982.0366173438
+Domestic & Public Use,2007,76733.5304466563
+Domestic & Public Use,2008,82632.92029000001
+Domestic & Public Use,2009,63287.8107106563
+Domestic & Public Use,2010,73114.9978536875
+Domestic & Public Use,2011,63288.344586
+Domestic & Public Use,2012,92626.814079
+Domestic & Public Use,2013,71926.458191
+Domestic & Public Use,2014,70585.84719468749
+Domestic & Public Use,2015,79874.118003
+Domestic & Public Use,2016,81074.525146
+Domestic & Public Use,2017,92839.239419
+Domestic & Public Use,2018,91408.701901
+Domestic & Public Use,2019,89737.858687
+Domestic & Public Use,2020,83095.64720600001
+Domestic & Public Use,2021,38887.78767148826
+Domestic & Public Use,2022,35454.09807100099
+Industry & Manufacturing,1990,47961.41001205444
+Industry & Manufacturing,1991,57069.08
+Industry & Manufacturing,1992,28632.92
+Industry & Manufacturing,1993,27772.16
+Industry & Manufacturing,1994,30309.58
+Industry & Manufacturing,1995,42254.40997470856
+Industry & Manufacturing,1996,20204.36999923706
+Industry & Manufacturing,1997,29852.520001621248
+Industry & Manufacturing,1998,43363.95000057221
+Industry & Manufacturing,1999,31254.749998664858
+Industry & Manufacturing,2000,27231.079172
+Industry & Manufacturing,2001,42825.326072
+Industry & Manufacturing,2002,26036.53655
+Industry & Manufacturing,2003,26591.167101
+Industry & Manufacturing,2004,41010.416627
+Industry & Manufacturing,2005,37291.854238414104
+Industry & Manufacturing,2006,37974.7504665859
+Industry & Manufacturing,2007,47013.58586558594
+Industry & Manufacturing,2008,34954.155187
+Industry & Manufacturing,2009,32917.8947408281
+Industry & Manufacturing,2010,53158.817863414064
+Industry & Manufacturing,2011,30737.12409720703
+Industry & Manufacturing,2012,35418.187685
+Industry & Manufacturing,2013,45498.471377
+Industry & Manufacturing,2014,31752.932733207028
+Industry & Manufacturing,2015,35109.133787
+Industry & Manufacturing,2016,46912.648588000004
+Industry & Manufacturing,2017,38223.216541
+Industry & Manufacturing,2018,31538.580522
+Industry & Manufacturing,2019,44469.315611
+Industry & Manufacturing,2020,36326.20426532031
+Industry & Manufacturing,2021,25933.065040507798
+Industry & Manufacturing,2022,8380.324389165804
+Services,1990,403.32
+Services,1991,5476.23
+Services,1992,600.48
+Services,1993,5376.38
+Services,1994,559.96
+Services,1995,689.43
+Services,1996,1175.48
+Services,1997,1594.52
+Services,1998,1426.42
+Services,1999,1417.18
+Services,2000,960.3569
+Services,2001,935.1556
+Services,2002,839.8519100000001
+Services,2003,1319.7022299999999
+Services,2004,1248.04484
+Services,2005,744.58854
+Services,2006,687.91075
+Services,2007,1071.91493
+Services,2008,730.0034499999999
+Services,2009,430.13557000000003
+Services,2010,10604.4882
+Services,2011,10393.49321
+Services,2012,10190.92388
+Services,2013,9595.894278
+Services,2014,8626.204788000001
+Services,2015,8396.409689
+Services,2016,9077.371215
+Services,2017,9605.564183
+Services,2018,8708.482536
+Services,2019,10157.863419000001
+Services,2020,1442.452274
+Services,2021,599.960089
+Services,2022,372.61242400000003

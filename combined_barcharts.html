@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Usage and Resources in Europe</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <!-- Logo linked to the homepage -->
+            <li class="nav-item logo">
+                <a href="index.html"><img src="logo.png" alt="Logo" class="navbar-logo"></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="javascript:void(0)">Explore</a>
+                <ul class="dropdown-list">
+                    <li><a href="EuropeOverview.html">Europe-Wide Water Overview</a></li>
+                    <li><a href="choropleth.html">Water Stress Map</a></li>
+                    <li><a href="combined_barcharts.html">Country-Level Water Overview</a></li>                    
+                </ul>
+            </li>
+            <li class="nav-item"><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Title and Description Section -->
+    <div id="title-description-container">
+        <h1>Country-Specific Overview: Water Usage, Resources, Abstractions & Stress</h1>   
+        <p>The charts provide a country-specific overview of <strong>water usage</strong>, <strong>resources</strong>, and <strong>abstractions</strong> across Europe from <strong>1990</strong> to <strong>2022</strong>. You can interact with the charts by toggling between different views and hovering over data points to see exact values. In the <strong>water usage</strong> and <strong>abstraction</strong> charts, you can hide or show specific categories by toggling the legend items. Additionally, you can switch between a <strong>stacked view</strong> and a <strong>percentage-stacked</strong> view for deeper insights and use the "<strong>Sort Descending</strong>" button to reorder the countries or data categories for easier comparison and analysis.</p>
+        <p>Another key visualization highlights the <strong>Top 5 Countries</strong> by <strong>Water Stress</strong>, showcasing the countries with the highest water stress from <strong>1990</strong> to <strong>2022</strong>. This chart provides a clear breakdown of usage relative to abstractions, with interactive tooltips displaying precise values for each country and a dynamic legend that updates based on the selected year.</p>
+    </div>
+    <div id="barchart_visualizations-section" class="section">
+        <div id="UsechartTitle"></div> 
+        <div id="ResourcechartTitle"></div>
+        <div id="AbstractchartTitle"></div>
+        <div id="barchart_buttons-container">
+            <button class="visualization-btn active" onclick="showChart('waterUsageChart')">Water Usage</button>
+            <button class="visualization-btn" onclick="showChart('waterResourcesChart')">Water Resources</button>
+            <button class="visualization-btn" onclick="showChart('waterAbstractionChart')">Water Abstractions</button>
+        </div>
+    </div>
+    
+    <script src="chart_toggle_buttons.js"></script>
+
+    <!-- Chart 1 Section -->
+    <section id="barchart1-section" class="barchart-section">
+        <div class="barchart_container">
+            <!-- Chart Section -->
+            <div class="barchart" id="waterUsageChart"></div>
+            <!-- Control Panel -->
+            <div class="controls-panel">
+                <div id="stacked_slider-container">
+                    <label for="yearSlider">Year Slider</label>
+                    <input type="range" id="yearSlider" min="1990" max="2022" step="1" value="2022">
+                    <span id="yearLabel">1990</span>
+                </div>
+                <div class="controls">
+                    <button class="stacked-visualization-btn" id="stackedButton">Stacked</button>
+                    <button class="stacked-visualization-btn" id="percentStackedButton">Percent Stacked</button>
+                    <!-- <button class="button" id="sort_descend">Sort Data</button> -->
+                </div>
+                <div id="legend"></div>
+                <button class="stacked-visualization-btn" id="sortButton">Sort Descending</button>
+            </div>
+        </div>
+    </section>
+    
+    <script src="usage_barchart.js"></script>
+
+    <!-- Chart 2 Section -->
+    <section id="barchart2-section" class="barchart-section" style="display: none;">  
+        <div class="barchart_container_resources">
+            <!-- Chart Section -->
+            <div class="barchart" id="waterResourcesChart"></div>
+            <div class="controls-panel">
+                <div id="stacked_slider-container">
+                    <label for="yearSlider">Year Slider</label>
+                    <input type="range" id="year_Slider" min="1990" max="2022" step="1" value="2022">
+                    <span id="ResourcesyearLabel">1990</span>
+                </div>
+                <div id="stacked_button-container">
+                    <button class="stacked-visualization-btn" id="sortResourcesButton">Sort Descending</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="resources_barchart.js"></script>
+
+    <!-- Chart 3 Section for Water Abstractions -->
+    <section id="barchart3-section" class="barchart-section" style="display: none;">
+        <div class="barchart_container">
+            <!-- Chart Section -->
+            <div class="barchart" id="waterAbstractionChart"></div>
+            <!-- Control Panel -->
+            <div class="controls-panel">
+                <div id="stacked_slider-container">
+                    <label for="yearAbstractionSlider">Year Slider</label>
+                    <input type="range" id="yearAbstractionSlider" min="1990" max="2022" step="1" value="2022">
+                    <span id="AbsyearLabel">1990</span>
+                </div>
+                <div class="controls">
+                    <button class="stacked-visualization-btn" id="abstraction_stackedButton">Stacked</button>
+                    <button class="stacked-visualization-btn" id="abstraction_percentStackedButton">Percent Stacked</button>
+                </div>
+                <div id="legendAbstraction"></div>
+                <button class="stacked-visualization-btn" id="sortAbstractionButton">Sort Descending</button>
+            </div>
+        </div>
+    </section>
+    
+    <script src="abstract_barchart.js"></script>
+
+    <div id="title-description-container">
+        <div id="chartTitle"></div> <!-- This will hold the chart title -->
+    </div>
+
+    <!-- Chart 4 Section -->
+    <section id="barchart4-section" class="barchart-section">
+        <div id="top5_slider-container">
+            <label for="top5Slider">Year Slider</label>
+            <input type="range" id="top5Slider" min="1990" max="2022" step="1" value="2022">
+            <span id="top5Label">1990</span>
+        </div>
+        <div class="barchart_container_top5">
+            <!-- Chart Section -->
+            <div class="barchart" id="waterRatioChart">
+                <div id="top5Chart"></div>
+                <!-- <div id="legendContainer"></div> -->
+            </div>
+        </div>
+    </section>
+
+    <script src="top5_country.js"></script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; COS30045 Data Visualisation Lab 1 Group 9</p>
+        <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
