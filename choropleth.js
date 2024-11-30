@@ -159,7 +159,7 @@ d3.csv("./water_stress.csv").then(data => {
 
             // Display country name with total OBS_VALUE_use (in m³)
             donutChartContainer
-                .html(`<h3>${countryName} (Total Water Usage- ${totalValue ? totalValue.toFixed(2) : "N/A"} m³)</h3>`)  // Display country name and total OBS_VALUE_use
+                .html(`<h3>${countryName} ( Total Water Usage- ${totalValue ? totalValue.toFixed(2) : "N/A"} m³)</h3>`)  // Display country name and total OBS_VALUE_use
                 .style("text-align", "center")
                 .style("margin-bottom", "5px")
                 .style("font-size", "16px")
