@@ -35,19 +35,10 @@ The data is sourced from the **OECD (Organisation for Economic Co-operation and 
 2.  **Transformation:** Standardized units to cubic meters ($m^3$) and mapped 20+ specific OECD measures into 5 major categories.
 3.  **Calculation:** Derived the **Water Stress Ratio** by dividing observed water usage by total water abstractions.
 
-<!-- REPOSITORY STRUCTURE -->
-## 📂 Project Structure
-<!-- This section helps users navigate your files -->
-```text
-├── index.html              # Landing Page & Introduction
-├── aboutus.html            # Team & Project Objectives
-├── EuropeOverview.html     # Europe-wide trends (Area/Line charts)
-├── combined_barcharts.html # Country comparisons (Stacked bars)
-├── choropleth.html         # Geospatial Water Stress Map
-├── style.css               # Custom styling and animations
-├── *.js                    # D3.js visualization logic
-├── /python                 # ETL scripts for data cleaning
-└── /data                   # Processed CSVs and Europe GeoJSON
+<!-- LIVE ACCESS SECTION -->
+## 🌐 Live Access
+The easiest way to view the project is via our hosted website:
+https://hydro-scope.vercel.app/
 
 <!-- SETUP INSTRUCTIONS -->
 ## ⚙️ Local Setup
