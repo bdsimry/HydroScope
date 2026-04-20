@@ -2,7 +2,6 @@
 # HydroScope: A Deep Dive into Europe's Water Dynamics
 
 <!-- BADGES -->
-![Status](https://img.shields.io/badge/Status-Completed-success)
 ![Language](https://img.shields.io/badge/Language-JavaScript%20%7C%20Python%20%7C%20HTML%20%7C%20CSS-blue)
 ![Library](https://img.shields.io/badge/Library-D3.js-orange)
 [![Live Demo](https://img.shields.io/badge/Demo-Live%20Website-brightgreen)](https://hydro-scope.vercel.app/)
