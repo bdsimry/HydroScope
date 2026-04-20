@@ -50,13 +50,23 @@ The data is sourced from the **OECD (Organisation for Economic Co-operation and 
 └── /data                   # Processed CSVs and Europe GeoJSON
 
 <!-- SETUP INSTRUCTIONS -->
-🚀 Local Setup
-To run this project locally, you need a local web server to allow D3 to load the CSV files (due to CORS policies).
-Clone the repo:
-code
-Bash
-git clone https://github.com/bdsimry/HydroScope.git
-Start a local server:
-If you have Python: python -m http.server 8000
-If you have Live Server (VS Code): Click "Go Live".
-Open in Browser: Navigate to http://localhost:8000
+## ⚙️ Local Setup
+To run this project locally, a local web server is required to allow D3.js to load the external CSV data files due to browser security (CORS) policies.
+
+<!-- STEP 1: CLONING THE REPOSITORY -->
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/bdsimry/HydroScope.git
+    ```
+
+<!-- STEP 2: STARTING A LOCAL SERVER -->
+2.  **Start a local server:**
+    *   **Python:** Open your terminal in the project folder and run:
+        ```bash
+        python -m http.server 8000
+        ```
+    *   **VS Code:** Install the "Live Server" extension, then right-click `index.html` and select **"Open with Live Server"**.
+
+<!-- STEP 3: ACCESSING THE SITE -->
+3.  **Open in Browser:** 
+    Navigate to `http://localhost:8000` or the address provided by your local server.
